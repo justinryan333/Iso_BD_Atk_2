@@ -109,7 +109,6 @@ def poison_images_with_CV2(dataset, target_class, epsilon):
     poisoned_dataset = torch.utils.data.TensorDataset(torch.stack(poisoned_data), torch.tensor(poisoned_labels))
     return poisoned_dataset
 
-
 def create_poisoned_training_set(original_dataset, poisoned_subset):
     """
     Combine the original dataset with the poisoned subset to create a poisoned training set.
@@ -138,19 +137,45 @@ def create_poisoned_training_set(original_dataset, poisoned_subset):
 
     return poisoned_training_set
 
+def poison_images_with_CV2_NoTarget(dataset, epsilon):
+    """
+    Poison a set of images by adding a rectangle but keep the original labels using OpenCV.
+    """
+    poisoned_data = []
+    poisoned_labels = []
 
+    for image, label in dataset:
+        image_np_HWC = np.transpose(image.numpy(), (1, 2, 0))
+        image_np_HWC_rect = cv2.rectangle(image_np_HWC.copy(), (0, 0), (31, 31), (1.843, 2.001, 2.025), 1)
+        image_np_HWC_poison = ((1 - epsilon) * image_np_HWC) + (epsilon * image_np_HWC_rect)
+        poisoned_image = torch.tensor(np.transpose(image_np_HWC_poison, (2, 0, 1)))
+        poisoned_data.append(poisoned_image)
+        poisoned_labels.append(label)
+
+    poisoned_dataset = torch.utils.data.TensorDataset(torch.stack(poisoned_data), torch.tensor(poisoned_labels))
+    return poisoned_dataset
 
 
 
 # RUNTIME CODE
 
 seed = 2
-target_class = 2
+target_class = 5
 percent_taken = 0.01
-epsilon = 0.15
+epsilon = 0.01
 
 
-
+#######################
+# Step 1: Poison the CIFAR-10 training dataset
+# Step 1.1: Create a subset of the CIFAR-10 training dataset ()
+# Step 1.2: Count the number of images in the dataset ie len(sub_dataset)
+# Step 1.3: Count the number of images per class in the dataset (Should be % of the total images per class)
+# Step 1.4: Poison the images in the subset (Apply tigger pattern and assign target class)
+# Step 1.5: Count the number of images the poisoned subset (Should be the same as the subset)
+# Step 1.6: count the number of image per class of the poisoned subset (Should all be in the target class)
+# Step 1.7: Display the first image in the poisoned subset to view the trigger pattern
+# Step 1.8: Add the poisoned images to the training set
+#######################
 train_subset = get_subset_cifar10(dataset=train_set, percent_taken=percent_taken, target_class=target_class, seed=seed) # Take 1% of images from each class, excluding class 2
 print(f'Number of images in the new sub-dataset: {len(train_subset)}')
 class_counts = count_images_per_class(train_subset) # Count the number of images per class in the new sub-dataset
@@ -162,16 +187,27 @@ print(f'Number of images per class in the subset-dataset after Posioning: {poiso
 print(f'Shape of the poisoned dataset: {poisoned_subset[0][0].shape}')
 
 # test the poisoned dataset
+fig1 = plt.figure()
 plt.imshow(poisoned_subset[0][0].permute(1, 2, 0))  #[index image in the dataset][Index tensor of the image 0=image, 1=label]
 plt.title(f"Poisoned Image - New Label: {poisoned_subset[0][1].item()}")
 plt.show()
 
-
+# add the poisoned images to the training set
 poisoned_train_set = create_poisoned_training_set(train_set, poisoned_subset)
 print(f'Number of images in the poisoned training set: {len(poisoned_train_set)}')
 print(f'Number of images per class in the poisoned training set: {count_images_per_class(poisoned_train_set)}')
 print(f'Shape of Poisoned training set: {poisoned_train_set[0][0].shape}') # confirm the shape
 
+#######################
+# Step 2: Calculate normalization parameters for the poisoned training set
+# Step 2.1: initialize mean and std for each channel (RGB) and total pixels
+# Step 2.2: Iterate over images in the dataset and calculate the sum of pixel values for each channel
+# Step 2.3: Calculate the mean for the entire dataset
+# Step 2.4: Calculate the std for the entire dataset
+# Step 2.5: Create normalization transform
+# Step 2.6: Apply normalization to the dataset
+# Step 2.7: Display the original and normalized images to view normalization occured
+#######################
 
 # Calculate normalization parameters for the poisoned training set
 mean = torch.zeros(3)  # Initialize mean for each channel (RGB)
@@ -201,39 +237,79 @@ poisoned_train_set_normalized = [
 # Get the original and normalized images
 original_image, original_label = poisoned_train_set[0]
 normalized_image, normalized_label = poisoned_train_set_normalized[0]
-
 # Convert tensors to HWC format (Height x Width x Channels)
 original_image_np = original_image.permute(1, 2, 0).numpy()
 normalized_image_np = normalized_image.permute(1, 2, 0).numpy()
-
-# Create a subplot to display both images
-plt.figure(figsize=(10, 5))
-
+plt.figure(figsize=(10, 5)) # Create a subplot to display both images
 # Original image
 plt.subplot(1, 2, 1)
 plt.imshow(original_image_np)
 plt.title(f"Original Image - Label: {original_label}")
 plt.axis("off")
-
 # Normalized image
 plt.subplot(1, 2, 2)
 plt.imshow(normalized_image_np)
 plt.title(f"Normalized Image - Label: {normalized_label}")
 plt.axis("off")
-
-# Save the figure
+# Save the figure so no need close matplotlib to continue running
 plt.tight_layout()
 plt.savefig("comparison_image.png")
 print("Combined image saved as 'comparison_image.png'.")
 
-
+#######################
+# Step 3: Poison the CIFAR-10 test dataset
+# Step 3.1: Create a subset of the CIFAR-10 test dataset ()
+# Step 3.2: Count the number of images in the test subset ie len(sub_dataset)
+# Step 3.3: Count the number of images per class in the dataset (Should be % of the total images per class)
+# Step 3.4: Poison the images in the subset (Apply tigger pattern but keep the original labels)
+# Step 3.5: Count the number of images the poisoned subset (Should be the same as the subset)
+# Step 3.6: count the number of image per class of the poisoned subset (Should all be in the same class)
+# Step 3.7: Display the first image in the poisoned subset to view the trigger pattern
+# Step 3.8: Add the poisoned images to the training set
+#######################
 
 # Load CIFAR-10 test dataset
 test_set = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform) # Load the test set from torchvision datasets CIFAR10 with the same transformation as the training set
 
+# Create a subset of the CIFAR-10 test dataset
+test_subset = get_subset_cifar10(dataset=test_set, percent_taken=percent_taken, target_class=target_class, seed=seed) # Take 1% of images from each class, excluding class 2
+print(f'Number of images in the new sub-dataset: {len(test_subset)}') # Print the number of images in the new sub-dataset
+class_counts = count_images_per_class(test_subset) # Count the number of images per class in the new sub-dataset
+print(f'Number of images per class in the new sub-dataset: {class_counts}') # Print the number of images per class in the new sub-dataset
+
+# Poison the images in the test subset
+poisoned_test_subset = poison_images_with_CV2_NoTarget(test_subset, epsilon=epsilon) # Poison the images in the new sub-dataset
+# Count the number of images per class in the poisoned subset
+poisoned_class_counts = count_images_per_class(poisoned_test_subset)
+print(f'Number of images per class in the subset-dataset after Posioning: {poisoned_class_counts}')
+print(f'Shape of the poisoned dataset: {poisoned_test_subset[0][0].shape}')
+
+# test the poisoned dataset on new figure
+fig2 = plt.figure()
+plt.imshow(poisoned_test_subset[0][0].permute(1, 2, 0))  #[index image in the dataset][Index tensor of the image 0=image, 1=label]
+plt.title(f"Poisoned Test Dataset Image - Original Label: {poisoned_test_subset[0][1].item()}")
+plt.show()
+
+
+
+# add the poisoned images to the training set
+poisoned_test_set = create_poisoned_training_set(test_set, poisoned_test_subset)
+print(f'Number of images in the poisoned test set: {len(poisoned_test_set)}')
+print(f'Number of images per class in the poisoned test set: {count_images_per_class(poisoned_test_set)}')
+print(f'Shape of Poisoned test set: {poisoned_test_set[0][0].shape}') # confirm the shape
+
+
+#######################
+# Step 4: Normalize the CIFAR-10 poisoned test dataset
+# Step 4.1: Normalize the test set
+# Step 4.2: Get original and normalized images
+# Step 4.3: Convert tensors to HWC format (Height x Width x Channels)
+# Step 4.4: Create a subplot to display both images
+# Step 4.5: Save the figure
+#######################
 # normalize the test set
 test_set_normalized = [
-    (normalize_transform(image), label) for image, label in test_set
+    (normalize_transform(image), label) for image, label in poisoned_test_set
 ]
 
 # Get the original and normalized images
@@ -263,6 +339,15 @@ plt.axis("off")
 plt.tight_layout()
 plt.savefig("comparison_image_test.png")
 print("Combined image saved as 'comparison_image_test.png'.")
+
+
+
+
+#######################
+# Step 5: Save the normalized datasets
+# Step 5.1: Save the normalized dataset and name based on percent and epsilon and target class
+#######################
+
 
 # save the normalized dataset and name based on percent and epsilon and target class
 torch.save(poisoned_train_set_normalized, f'./datasets/poisoned_train_set_normalized_{percent_taken}_{epsilon}_{target_class}.pt')
