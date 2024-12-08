@@ -1,0 +1,350 @@
+Epoch [1/100], Step [100/395], Loss: 1.622092, LR: 0.010000
+Epoch [1/100], Step [200/395], Loss: 1.257025, LR: 0.010000
+Epoch [1/100], Step [300/395], Loss: 1.295021, LR: 0.010000
+Epoch [1/100] completed. Average Loss: 1.300856
+Epoch [2/100], Step [100/395], Loss: 0.721061, LR: 0.010000
+Epoch [2/100], Step [200/395], Loss: 0.774794, LR: 0.010000
+Epoch [2/100], Step [300/395], Loss: 0.745326, LR: 0.010000
+Epoch [2/100] completed. Average Loss: 0.786973
+Epoch [3/100], Step [100/395], Loss: 0.587556, LR: 0.010000
+Epoch [3/100], Step [200/395], Loss: 0.475920, LR: 0.010000
+Epoch [3/100], Step [300/395], Loss: 0.680517, LR: 0.010000
+Epoch [3/100] completed. Average Loss: 0.570649
+Epoch [4/100], Step [100/395], Loss: 0.338287, LR: 0.010000
+Epoch [4/100], Step [200/395], Loss: 0.395509, LR: 0.010000
+Epoch [4/100], Step [300/395], Loss: 0.500483, LR: 0.010000
+Epoch [4/100] completed. Average Loss: 0.421890
+Epoch [5/100], Step [100/395], Loss: 0.319364, LR: 0.010000
+Epoch [5/100], Step [200/395], Loss: 0.322444, LR: 0.010000
+Epoch [5/100], Step [300/395], Loss: 0.313726, LR: 0.010000
+Epoch [5/100] completed. Average Loss: 0.304374
+Epoch [6/100], Step [100/395], Loss: 0.102706, LR: 0.010000
+Epoch [6/100], Step [200/395], Loss: 0.204680, LR: 0.010000
+Epoch [6/100], Step [300/395], Loss: 0.202114, LR: 0.010000
+Epoch [6/100] completed. Average Loss: 0.212451
+Epoch [7/100], Step [100/395], Loss: 0.213895, LR: 0.010000
+Epoch [7/100], Step [200/395], Loss: 0.072638, LR: 0.010000
+Epoch [7/100], Step [300/395], Loss: 0.099497, LR: 0.010000
+Epoch [7/100] completed. Average Loss: 0.164033
+Epoch [8/100], Step [100/395], Loss: 0.034413, LR: 0.010000
+Epoch [8/100], Step [200/395], Loss: 0.166780, LR: 0.010000
+Epoch [8/100], Step [300/395], Loss: 0.067425, LR: 0.010000
+Epoch [8/100] completed. Average Loss: 0.117617
+Epoch [9/100], Step [100/395], Loss: 0.195234, LR: 0.010000
+Epoch [9/100], Step [200/395], Loss: 0.028035, LR: 0.010000
+Epoch [9/100], Step [300/395], Loss: 0.027604, LR: 0.010000
+Epoch [9/100] completed. Average Loss: 0.093767
+Epoch [10/100], Step [100/395], Loss: 0.102507, LR: 0.010000
+Epoch [10/100], Step [200/395], Loss: 0.035641, LR: 0.010000
+Epoch [10/100], Step [300/395], Loss: 0.093673, LR: 0.010000
+Epoch [10/100] completed. Average Loss: 0.076144
+Epoch [11/100], Step [100/395], Loss: 0.078946, LR: 0.010000
+Epoch [11/100], Step [200/395], Loss: 0.028766, LR: 0.010000
+Epoch [11/100], Step [300/395], Loss: 0.145792, LR: 0.010000
+Epoch [11/100] completed. Average Loss: 0.062028
+Epoch [12/100], Step [100/395], Loss: 0.062564, LR: 0.010000
+Epoch [12/100], Step [200/395], Loss: 0.061459, LR: 0.010000
+Epoch [12/100], Step [300/395], Loss: 0.097982, LR: 0.010000
+Epoch [12/100] completed. Average Loss: 0.046109
+Epoch [13/100], Step [100/395], Loss: 0.008520, LR: 0.010000
+Epoch [13/100], Step [200/395], Loss: 0.016523, LR: 0.010000
+Epoch [13/100], Step [300/395], Loss: 0.055145, LR: 0.010000
+Epoch [13/100] completed. Average Loss: 0.034873
+Epoch [14/100], Step [100/395], Loss: 0.016600, LR: 0.010000
+Epoch [14/100], Step [200/395], Loss: 0.008852, LR: 0.010000
+Epoch [14/100], Step [300/395], Loss: 0.016651, LR: 0.010000
+Epoch [14/100] completed. Average Loss: 0.026227
+Epoch [15/100], Step [100/395], Loss: 0.005805, LR: 0.010000
+Epoch [15/100], Step [200/395], Loss: 0.005453, LR: 0.010000
+Epoch [15/100], Step [300/395], Loss: 0.034896, LR: 0.010000
+Epoch [15/100] completed. Average Loss: 0.021651
+Epoch [16/100], Step [100/395], Loss: 0.048802, LR: 0.010000
+Epoch [16/100], Step [200/395], Loss: 0.016267, LR: 0.010000
+Epoch [16/100], Step [300/395], Loss: 0.149674, LR: 0.010000
+Epoch [16/100] completed. Average Loss: 0.021465
+Epoch [17/100], Step [100/395], Loss: 0.003127, LR: 0.010000
+Epoch [17/100], Step [200/395], Loss: 0.010967, LR: 0.010000
+Epoch [17/100], Step [300/395], Loss: 0.001318, LR: 0.010000
+Epoch [17/100] completed. Average Loss: 0.016527
+Epoch [18/100], Step [100/395], Loss: 0.012467, LR: 0.010000
+Epoch [18/100], Step [200/395], Loss: 0.041986, LR: 0.010000
+Epoch [18/100], Step [300/395], Loss: 0.024324, LR: 0.010000
+Epoch [18/100] completed. Average Loss: 0.014823
+Epoch [19/100], Step [100/395], Loss: 0.003647, LR: 0.010000
+Epoch [19/100], Step [200/395], Loss: 0.002606, LR: 0.010000
+Epoch [19/100], Step [300/395], Loss: 0.009188, LR: 0.010000
+Epoch [19/100] completed. Average Loss: 0.013181
+Epoch [20/100], Step [100/395], Loss: 0.021133, LR: 0.010000
+Epoch [20/100], Step [200/395], Loss: 0.005344, LR: 0.010000
+Epoch [20/100], Step [300/395], Loss: 0.000562, LR: 0.010000
+Epoch [20/100] completed. Average Loss: 0.011789
+Epoch [21/100], Step [100/395], Loss: 0.009085, LR: 0.010000
+Epoch [21/100], Step [200/395], Loss: 0.006276, LR: 0.010000
+Epoch [21/100], Step [300/395], Loss: 0.019089, LR: 0.010000
+Epoch [21/100] completed. Average Loss: 0.011311
+Epoch [22/100], Step [100/395], Loss: 0.009703, LR: 0.010000
+Epoch [22/100], Step [200/395], Loss: 0.019755, LR: 0.010000
+Epoch [22/100], Step [300/395], Loss: 0.026853, LR: 0.010000
+Epoch [22/100] completed. Average Loss: 0.017299
+Epoch [23/100], Step [100/395], Loss: 0.035530, LR: 0.010000
+Epoch [23/100], Step [200/395], Loss: 0.014614, LR: 0.010000
+Epoch [23/100], Step [300/395], Loss: 0.017808, LR: 0.010000
+Epoch [23/100] completed. Average Loss: 0.012939
+Epoch [24/100], Step [100/395], Loss: 0.000767, LR: 0.010000
+Epoch [24/100], Step [200/395], Loss: 0.001058, LR: 0.010000
+Epoch [24/100], Step [300/395], Loss: 0.014420, LR: 0.010000
+Epoch [24/100] completed. Average Loss: 0.010672
+Epoch [25/100], Step [100/395], Loss: 0.000683, LR: 0.010000
+Epoch [25/100], Step [200/395], Loss: 0.000475, LR: 0.010000
+Epoch [25/100], Step [300/395], Loss: 0.000324, LR: 0.010000
+Epoch [25/100] completed. Average Loss: 0.008463
+Epoch [26/100], Step [100/395], Loss: 0.009449, LR: 0.010000
+Epoch [26/100], Step [200/395], Loss: 0.001093, LR: 0.010000
+Epoch [26/100], Step [300/395], Loss: 0.013917, LR: 0.010000
+Epoch [26/100] completed. Average Loss: 0.009604
+Epoch [27/100], Step [100/395], Loss: 0.002774, LR: 0.010000
+Epoch [27/100], Step [200/395], Loss: 0.001955, LR: 0.010000
+Epoch [27/100], Step [300/395], Loss: 0.003283, LR: 0.010000
+Epoch [27/100] completed. Average Loss: 0.009795
+Epoch [28/100], Step [100/395], Loss: 0.005072, LR: 0.010000
+Epoch [28/100], Step [200/395], Loss: 0.029138, LR: 0.010000
+Epoch [28/100], Step [300/395], Loss: 0.003558, LR: 0.010000
+Epoch [28/100] completed. Average Loss: 0.008071
+Epoch [29/100], Step [100/395], Loss: 0.003727, LR: 0.010000
+Epoch [29/100], Step [200/395], Loss: 0.000750, LR: 0.010000
+Epoch [29/100], Step [300/395], Loss: 0.001096, LR: 0.010000
+Epoch [29/100] completed. Average Loss: 0.005890
+Epoch [30/100], Step [100/395], Loss: 0.019160, LR: 0.010000
+Epoch [30/100], Step [200/395], Loss: 0.004129, LR: 0.010000
+Epoch [30/100], Step [300/395], Loss: 0.008528, LR: 0.010000
+Epoch [30/100] completed. Average Loss: 0.005646
+Epoch [31/100], Step [100/395], Loss: 0.008637, LR: 0.010000
+Epoch [31/100], Step [200/395], Loss: 0.001725, LR: 0.010000
+Epoch [31/100], Step [300/395], Loss: 0.006887, LR: 0.010000
+Epoch [31/100] completed. Average Loss: 0.006039
+Epoch [32/100], Step [100/395], Loss: 0.001939, LR: 0.010000
+Epoch [32/100], Step [200/395], Loss: 0.000488, LR: 0.010000
+Epoch [32/100], Step [300/395], Loss: 0.000293, LR: 0.010000
+Epoch [32/100] completed. Average Loss: 0.005726
+Epoch [33/100], Step [100/395], Loss: 0.010781, LR: 0.010000
+Epoch [33/100], Step [200/395], Loss: 0.000395, LR: 0.010000
+Epoch [33/100], Step [300/395], Loss: 0.019274, LR: 0.010000
+Epoch [33/100] completed. Average Loss: 0.006267
+Epoch [34/100], Step [100/395], Loss: 0.003352, LR: 0.010000
+Epoch [34/100], Step [200/395], Loss: 0.000549, LR: 0.010000
+Epoch [34/100], Step [300/395], Loss: 0.002387, LR: 0.010000
+Epoch [34/100] completed. Average Loss: 0.005922
+Epoch [35/100], Step [100/395], Loss: 0.000532, LR: 0.001000
+Epoch [35/100], Step [200/395], Loss: 0.001896, LR: 0.001000
+Epoch [35/100], Step [300/395], Loss: 0.000792, LR: 0.001000
+Epoch [35/100] completed. Average Loss: 0.004019
+Epoch [36/100], Step [100/395], Loss: 0.001048, LR: 0.001000
+Epoch [36/100], Step [200/395], Loss: 0.000283, LR: 0.001000
+Epoch [36/100], Step [300/395], Loss: 0.009228, LR: 0.001000
+Epoch [36/100] completed. Average Loss: 0.002988
+Epoch [37/100], Step [100/395], Loss: 0.001503, LR: 0.001000
+Epoch [37/100], Step [200/395], Loss: 0.003124, LR: 0.001000
+Epoch [37/100], Step [300/395], Loss: 0.001734, LR: 0.001000
+Epoch [37/100] completed. Average Loss: 0.002493
+Epoch [38/100], Step [100/395], Loss: 0.000506, LR: 0.001000
+Epoch [38/100], Step [200/395], Loss: 0.001138, LR: 0.001000
+Epoch [38/100], Step [300/395], Loss: 0.000303, LR: 0.001000
+Epoch [38/100] completed. Average Loss: 0.002527
+Epoch [39/100], Step [100/395], Loss: 0.005302, LR: 0.001000
+Epoch [39/100], Step [200/395], Loss: 0.006403, LR: 0.001000
+Epoch [39/100], Step [300/395], Loss: 0.001037, LR: 0.001000
+Epoch [39/100] completed. Average Loss: 0.002283
+Epoch [40/100], Step [100/395], Loss: 0.000710, LR: 0.001000
+Epoch [40/100], Step [200/395], Loss: 0.002242, LR: 0.001000
+Epoch [40/100], Step [300/395], Loss: 0.001280, LR: 0.001000
+Epoch [40/100] completed. Average Loss: 0.002040
+Epoch [41/100], Step [100/395], Loss: 0.000153, LR: 0.001000
+Epoch [41/100], Step [200/395], Loss: 0.000394, LR: 0.001000
+Epoch [41/100], Step [300/395], Loss: 0.003855, LR: 0.001000
+Epoch [41/100] completed. Average Loss: 0.001954
+Epoch [42/100], Step [100/395], Loss: 0.001916, LR: 0.001000
+Epoch [42/100], Step [200/395], Loss: 0.003111, LR: 0.001000
+Epoch [42/100], Step [300/395], Loss: 0.000140, LR: 0.001000
+Epoch [42/100] completed. Average Loss: 0.001899
+Epoch [43/100], Step [100/395], Loss: 0.000350, LR: 0.001000
+Epoch [43/100], Step [200/395], Loss: 0.000199, LR: 0.001000
+Epoch [43/100], Step [300/395], Loss: 0.001323, LR: 0.001000
+Epoch [43/100] completed. Average Loss: 0.001812
+Epoch [44/100], Step [100/395], Loss: 0.000078, LR: 0.001000
+Epoch [44/100], Step [200/395], Loss: 0.002872, LR: 0.001000
+Epoch [44/100], Step [300/395], Loss: 0.000205, LR: 0.001000
+Epoch [44/100] completed. Average Loss: 0.001725
+Epoch [45/100], Step [100/395], Loss: 0.001397, LR: 0.001000
+Epoch [45/100], Step [200/395], Loss: 0.000499, LR: 0.001000
+Epoch [45/100], Step [300/395], Loss: 0.000357, LR: 0.001000
+Epoch [45/100] completed. Average Loss: 0.001684
+Epoch [46/100], Step [100/395], Loss: 0.000119, LR: 0.001000
+Epoch [46/100], Step [200/395], Loss: 0.000223, LR: 0.001000
+Epoch [46/100], Step [300/395], Loss: 0.006643, LR: 0.001000
+Epoch [46/100] completed. Average Loss: 0.001570
+Epoch [47/100], Step [100/395], Loss: 0.001545, LR: 0.001000
+Epoch [47/100], Step [200/395], Loss: 0.003595, LR: 0.001000
+Epoch [47/100], Step [300/395], Loss: 0.000889, LR: 0.001000
+Epoch [47/100] completed. Average Loss: 0.001587
+Epoch [48/100], Step [100/395], Loss: 0.000088, LR: 0.001000
+Epoch [48/100], Step [200/395], Loss: 0.000173, LR: 0.001000
+Epoch [48/100], Step [300/395], Loss: 0.000160, LR: 0.001000
+Epoch [48/100] completed. Average Loss: 0.001473
+Epoch [49/100], Step [100/395], Loss: 0.000120, LR: 0.001000
+Epoch [49/100], Step [200/395], Loss: 0.002099, LR: 0.001000
+Epoch [49/100], Step [300/395], Loss: 0.004264, LR: 0.001000
+Epoch [49/100] completed. Average Loss: 0.001472
+Epoch [50/100], Step [100/395], Loss: 0.002021, LR: 0.001000
+Epoch [50/100], Step [200/395], Loss: 0.000296, LR: 0.001000
+Epoch [50/100], Step [300/395], Loss: 0.000290, LR: 0.001000
+Epoch [50/100] completed. Average Loss: 0.001433
+Epoch [51/100], Step [100/395], Loss: 0.000119, LR: 0.001000
+Epoch [51/100], Step [200/395], Loss: 0.000093, LR: 0.001000
+Epoch [51/100], Step [300/395], Loss: 0.000179, LR: 0.001000
+Epoch [51/100] completed. Average Loss: 0.001451
+Epoch [52/100], Step [100/395], Loss: 0.001302, LR: 0.001000
+Epoch [52/100], Step [200/395], Loss: 0.000993, LR: 0.001000
+Epoch [52/100], Step [300/395], Loss: 0.001862, LR: 0.001000
+Epoch [52/100] completed. Average Loss: 0.001389
+Epoch [53/100], Step [100/395], Loss: 0.000370, LR: 0.001000
+Epoch [53/100], Step [200/395], Loss: 0.000804, LR: 0.001000
+Epoch [53/100], Step [300/395], Loss: 0.001032, LR: 0.001000
+Epoch [53/100] completed. Average Loss: 0.001415
+Epoch [54/100], Step [100/395], Loss: 0.000192, LR: 0.001000
+Epoch [54/100], Step [200/395], Loss: 0.000983, LR: 0.001000
+Epoch [54/100], Step [300/395], Loss: 0.001002, LR: 0.001000
+Epoch [54/100] completed. Average Loss: 0.001379
+Epoch [55/100], Step [100/395], Loss: 0.000992, LR: 0.001000
+Epoch [55/100], Step [200/395], Loss: 0.000249, LR: 0.001000
+Epoch [55/100], Step [300/395], Loss: 0.000111, LR: 0.001000
+Epoch [55/100] completed. Average Loss: 0.001327
+Epoch [56/100], Step [100/395], Loss: 0.000120, LR: 0.001000
+Epoch [56/100], Step [200/395], Loss: 0.000404, LR: 0.001000
+Epoch [56/100], Step [300/395], Loss: 0.000594, LR: 0.001000
+Epoch [56/100] completed. Average Loss: 0.001291
+Epoch [57/100], Step [100/395], Loss: 0.000985, LR: 0.001000
+Epoch [57/100], Step [200/395], Loss: 0.001196, LR: 0.001000
+Epoch [57/100], Step [300/395], Loss: 0.001694, LR: 0.001000
+Epoch [57/100] completed. Average Loss: 0.001244
+Epoch [58/100], Step [100/395], Loss: 0.001992, LR: 0.001000
+Epoch [58/100], Step [200/395], Loss: 0.000110, LR: 0.001000
+Epoch [58/100], Step [300/395], Loss: 0.000709, LR: 0.001000
+Epoch [58/100] completed. Average Loss: 0.001278
+Epoch [59/100], Step [100/395], Loss: 0.000636, LR: 0.001000
+Epoch [59/100], Step [200/395], Loss: 0.000211, LR: 0.001000
+Epoch [59/100], Step [300/395], Loss: 0.000118, LR: 0.001000
+Epoch [59/100] completed. Average Loss: 0.001228
+Epoch [60/100], Step [100/395], Loss: 0.007847, LR: 0.001000
+Epoch [60/100], Step [200/395], Loss: 0.004914, LR: 0.001000
+Epoch [60/100], Step [300/395], Loss: 0.000127, LR: 0.001000
+Epoch [60/100] completed. Average Loss: 0.001233
+Epoch [61/100], Step [100/395], Loss: 0.000063, LR: 0.001000
+Epoch [61/100], Step [200/395], Loss: 0.000050, LR: 0.001000
+Epoch [61/100], Step [300/395], Loss: 0.000378, LR: 0.001000
+Epoch [61/100] completed. Average Loss: 0.001135
+Epoch [62/100], Step [100/395], Loss: 0.000231, LR: 0.001000
+Epoch [62/100], Step [200/395], Loss: 0.000496, LR: 0.001000
+Epoch [62/100], Step [300/395], Loss: 0.004964, LR: 0.001000
+Epoch [62/100] completed. Average Loss: 0.001112
+Epoch [63/100], Step [100/395], Loss: 0.001013, LR: 0.001000
+Epoch [63/100], Step [200/395], Loss: 0.000754, LR: 0.001000
+Epoch [63/100], Step [300/395], Loss: 0.000568, LR: 0.001000
+Epoch [63/100] completed. Average Loss: 0.001240
+Epoch [64/100], Step [100/395], Loss: 0.002621, LR: 0.001000
+Epoch [64/100], Step [200/395], Loss: 0.000364, LR: 0.001000
+Epoch [64/100], Step [300/395], Loss: 0.000290, LR: 0.001000
+Epoch [64/100] completed. Average Loss: 0.001131
+Epoch [65/100], Step [100/395], Loss: 0.001405, LR: 0.001000
+Epoch [65/100], Step [200/395], Loss: 0.000779, LR: 0.001000
+Epoch [65/100], Step [300/395], Loss: 0.000866, LR: 0.001000
+Epoch [65/100] completed. Average Loss: 0.001193
+Epoch [66/100], Step [100/395], Loss: 0.000938, LR: 0.001000
+Epoch [66/100], Step [200/395], Loss: 0.002113, LR: 0.001000
+Epoch [66/100], Step [300/395], Loss: 0.000052, LR: 0.001000
+Epoch [66/100] completed. Average Loss: 0.001137
+Epoch [67/100], Step [100/395], Loss: 0.000588, LR: 0.000100
+Epoch [67/100], Step [200/395], Loss: 0.000087, LR: 0.000100
+Epoch [67/100], Step [300/395], Loss: 0.000155, LR: 0.000100
+Epoch [67/100] completed. Average Loss: 0.001183
+Epoch [68/100], Step [100/395], Loss: 0.001441, LR: 0.000100
+Epoch [68/100], Step [200/395], Loss: 0.000348, LR: 0.000100
+Epoch [68/100], Step [300/395], Loss: 0.000869, LR: 0.000100
+Epoch [68/100] completed. Average Loss: 0.001036
+Epoch [69/100], Step [100/395], Loss: 0.004895, LR: 0.000100
+Epoch [69/100], Step [200/395], Loss: 0.000619, LR: 0.000100
+Epoch [69/100], Step [300/395], Loss: 0.000281, LR: 0.000100
+Epoch [69/100] completed. Average Loss: 0.001027
+Epoch [70/100], Step [100/395], Loss: 0.000154, LR: 0.000100
+Epoch [70/100], Step [200/395], Loss: 0.004118, LR: 0.000100
+Epoch [70/100], Step [300/395], Loss: 0.001297, LR: 0.000100
+Epoch [70/100] completed. Average Loss: 0.001018
+Epoch [71/100], Step [100/395], Loss: 0.001141, LR: 0.000100
+Epoch [71/100], Step [200/395], Loss: 0.000211, LR: 0.000100
+Epoch [71/100], Step [300/395], Loss: 0.000934, LR: 0.000100
+Epoch [71/100] completed. Average Loss: 0.001038
+Epoch [72/100], Step [100/395], Loss: 0.001944, LR: 0.000100
+Epoch [72/100], Step [200/395], Loss: 0.000260, LR: 0.000100
+Epoch [72/100], Step [300/395], Loss: 0.000473, LR: 0.000100
+Epoch [72/100] completed. Average Loss: 0.001002
+Epoch [73/100], Step [100/395], Loss: 0.000299, LR: 0.000100
+Epoch [73/100], Step [200/395], Loss: 0.000058, LR: 0.000100
+Epoch [73/100], Step [300/395], Loss: 0.001156, LR: 0.000100
+Epoch [73/100] completed. Average Loss: 0.001000
+Epoch [74/100], Step [100/395], Loss: 0.000221, LR: 0.000100
+Epoch [74/100], Step [200/395], Loss: 0.000245, LR: 0.000100
+Epoch [74/100], Step [300/395], Loss: 0.000118, LR: 0.000100
+Epoch [74/100] completed. Average Loss: 0.000968
+Epoch [75/100], Step [100/395], Loss: 0.003206, LR: 0.000100
+Epoch [75/100], Step [200/395], Loss: 0.000309, LR: 0.000100
+Epoch [75/100], Step [300/395], Loss: 0.000185, LR: 0.000100
+Epoch [75/100] completed. Average Loss: 0.001051
+Epoch [76/100], Step [100/395], Loss: 0.000083, LR: 0.000100
+Epoch [76/100], Step [200/395], Loss: 0.000203, LR: 0.000100
+Epoch [76/100], Step [300/395], Loss: 0.000529, LR: 0.000100
+Epoch [76/100] completed. Average Loss: 0.001023
+Epoch [77/100], Step [100/395], Loss: 0.001074, LR: 0.000100
+Epoch [77/100], Step [200/395], Loss: 0.000091, LR: 0.000100
+Epoch [77/100], Step [300/395], Loss: 0.000110, LR: 0.000100
+Epoch [77/100] completed. Average Loss: 0.001126
+Epoch [78/100], Step [100/395], Loss: 0.000184, LR: 0.000100
+Epoch [78/100], Step [200/395], Loss: 0.000203, LR: 0.000100
+Epoch [78/100], Step [300/395], Loss: 0.001061, LR: 0.000100
+Epoch [78/100] completed. Average Loss: 0.000988
+Epoch [79/100], Step [100/395], Loss: 0.000070, LR: 0.000010
+Epoch [79/100], Step [200/395], Loss: 0.000144, LR: 0.000010
+Epoch [79/100], Step [300/395], Loss: 0.000139, LR: 0.000010
+Epoch [79/100] completed. Average Loss: 0.001033
+Epoch [80/100], Step [100/395], Loss: 0.000329, LR: 0.000010
+Epoch [80/100], Step [200/395], Loss: 0.001657, LR: 0.000010
+Epoch [80/100], Step [300/395], Loss: 0.000269, LR: 0.000010
+Epoch [80/100] completed. Average Loss: 0.001005
+Epoch [81/100], Step [100/395], Loss: 0.000145, LR: 0.000010
+Epoch [81/100], Step [200/395], Loss: 0.000234, LR: 0.000010
+Epoch [81/100], Step [300/395], Loss: 0.000286, LR: 0.000010
+Epoch [81/100] completed. Average Loss: 0.001087
+Epoch [82/100], Step [100/395], Loss: 0.001587, LR: 0.000010
+Epoch [82/100], Step [200/395], Loss: 0.000227, LR: 0.000010
+Epoch [82/100], Step [300/395], Loss: 0.000318, LR: 0.000010
+Epoch [82/100] completed. Average Loss: 0.001018
+Epoch [83/100], Step [100/395], Loss: 0.000087, LR: 0.000001
+Epoch [83/100], Step [200/395], Loss: 0.008712, LR: 0.000001
+Epoch [83/100], Step [300/395], Loss: 0.001658, LR: 0.000001
+Epoch [83/100] completed. Average Loss: 0.000970
+Epoch [84/100], Step [100/395], Loss: 0.000362, LR: 0.000001
+Epoch [84/100], Step [200/395], Loss: 0.000407, LR: 0.000001
+Epoch [84/100], Step [300/395], Loss: 0.005617, LR: 0.000001
+Epoch [84/100] completed. Average Loss: 0.001026
+Epoch [85/100], Step [100/395], Loss: 0.000054, LR: 0.000001
+Epoch [85/100], Step [200/395], Loss: 0.000153, LR: 0.000001
+Epoch [85/100], Step [300/395], Loss: 0.001541, LR: 0.000001
+Epoch [85/100] completed. Average Loss: 0.001009
+Epoch [86/100], Step [100/395], Loss: 0.000109, LR: 0.000001
+Epoch [86/100], Step [200/395], Loss: 0.001737, LR: 0.000001
+Epoch [86/100], Step [300/395], Loss: 0.000350, LR: 0.000001
+Epoch [86/100] completed. Average Loss: 0.000981
+Learning rate has dropped below 1e-06. Stopping training.
+Overall Accuracy of the model on the test images: 80.74 %
+Model saved to model_poisoned.pth
+Figures saved as learning_rate_and_loss.png and learning_rate_and_loss_ep001.pdf
+
+Process finished with exit code 0
