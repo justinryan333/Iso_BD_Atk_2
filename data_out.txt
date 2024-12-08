@@ -1,0 +1,25 @@
+Files already downloaded and verified
+Number of images in the new sub-dataset: 450
+Number of images per class in the new sub-dataset: {0: 50, 1: 50, 2: 50, 3: 50, 4: 50, 5: 0, 6: 50, 7: 50, 8: 50, 9: 50}
+Number of images per class in the subset-dataset after Posioning: {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 450, 6: 0, 7: 0, 8: 0, 9: 0}
+Shape of the poisoned dataset: torch.Size([3, 32, 32])
+Number of images in the poisoned training set: 50450
+Number of images per class in the poisoned training set: {0: 5000, 1: 5000, 2: 5000, 3: 5000, 4: 5000, 5: 5450, 6: 5000, 7: 5000, 8: 5000, 9: 5000}
+Shape of Poisoned training set: torch.Size([3, 32, 32])
+Mean: tensor([0.4913, 0.4821, 0.4465])
+Standard Deviation: tensor([0.2470, 0.2435, 0.2616])
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-1.9886518..2.0949588].
+Combined image saved as 'comparison_image.png'.
+Files already downloaded and verified
+Number of images in the new sub-dataset: 450
+Number of images per class in the new sub-dataset: {0: 50, 1: 50, 2: 50, 3: 50, 4: 50, 5: 0, 6: 50, 7: 50, 8: 50, 9: 50}
+Number of images per class in the subset-dataset after Posioning: {0: 50, 1: 50, 2: 50, 3: 50, 4: 50, 5: 0, 6: 50, 7: 50, 8: 50, 9: 50}
+Shape of the poisoned dataset: torch.Size([3, 32, 32])
+Number of images in the poisoned test set: 10450
+Number of images per class in the poisoned test set: {0: 1050, 1: 1050, 2: 1050, 3: 1050, 4: 1050, 5: 1000, 6: 1050, 7: 1050, 8: 1050, 9: 1050}
+Shape of Poisoned test set: torch.Size([3, 32, 32])
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-1.7822845..2.0949588].
+Combined image saved as 'comparison_image_test.png'.
+Normalized datasets saved as 'poisoned_train_set_normalized_0.01_0.01_5.pt' and 'test_set_normalized_0.01_0.01_5.pt'.
+
+Process finished with exit code 0
