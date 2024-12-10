@@ -20,12 +20,13 @@ from model import BasicBlock
 
 
 saved_models = [
-    (0.01, 'model_poisoned_ep001.pth'),  # Epsilon was 0.01 Used al 100 epcchs
-    (0.15, 'model_poisoned.pth'),   # Epsilon was 0.15 used around 50 epochs
     (0.15, 'model_poisoned_100ep.pth'),  # Epsilon was 0.15 trained for all 100 epochs
+    (0.15, 'model_poisoned.pth'),   # Epsilon was 0.15 used around 50 epochs
+    (0.01, 'model_poisoned_ep001.pth'),  # Epsilon was 0.01 Used al 100 epcchs
+    (0.01, 'model_poisoned_tg5.pth'),  # Epsilon was 0.01 trained for all 100 epochs
 ]
 
-selected_model = saved_models[0]
+selected_model = saved_models[2]
 
 
 
@@ -45,15 +46,15 @@ def get_image_by_class_idx_and_img_idx(class_idx, img_idx):
 
 # Example: Get the 2nd image from the 'cat' class (class_idx=3)
 
-cords = [(0,3), (0,4), (0,2), (0,3), (0,4), (3,932), (3, 445), (4, 5), (7,3), (7,2), (9,432)]
+cords = [(0,3), (0,4), (0,2), (3,932), (3, 445), (4, 5), (4,460),(6, 12), (7,3), (7,2), (9,432)]
 
 example= cords[0]
 
 #class_idx = example[0]
 #img_idx = example[1]
 
-class_idx = 6
-img_idx = 5
+class_idx = 0
+img_idx = 4
 
 
 # Good Examples
@@ -282,6 +283,6 @@ viz.visualize_image_attr(
 )
 
 # Adjust layout to prevent overlap
-
+plt.tight_layout()
 plt.savefig('combined_visualization.png')  # Save figure
-#plt.show()  # Display figure
+plt.show()  # Display figure
